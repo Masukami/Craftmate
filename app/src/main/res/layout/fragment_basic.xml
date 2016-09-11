@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.masukami.minecraftcraftmate.BasicFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TableLayout
+        android:paddingBottom="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Basic Recipes"
+                android:id="@+id/tvBasicTitle" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ibWood"
+                android:background="@drawable/img_wood"/>
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibStick"
+                android:background="@drawable/img_stick"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibTorch"
+                android:background="@drawable/img_torch"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibWorkBench"
+                android:background="@drawable/img_workbench"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibChest"
+                android:background="@drawable/img_chest"
+                android:layout_weight="1" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibFurnace"
+                android:background="@drawable/img_furnace"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibLadder"
+                android:background="@drawable/img_ladder"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibFence"
+                android:background="@drawable/img_fence"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibBoat"
+                android:background="@drawable/img_boat"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibWoodSlabs"
+                android:background="@drawable/img_woodenslabs"
+                android:layout_weight="1" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibStoneSlabs"
+                android:background="@drawable/img_stoneslabs"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSign"
+                android:background="@drawable/img_sign"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibDoor"
+                android:background="@drawable/img_doors"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibPainting"
+                android:background="@drawable/img_painting"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibBed"
+                android:background="@drawable/img_bed"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

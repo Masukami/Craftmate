@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_margin="2dp"
+    android:background="@drawable/popup_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Wood Plank"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_above="@+id/ivWoodCraft"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivWoodCraft"
+        android:src="@drawable/craft_wood"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="x1 Any Type of Wood"
+        android:textStyle="bold"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/ivWoodCraft"
+        android:layout_alignLeft="@+id/ivWoodCraft"
+        android:layout_alignStart="@+id/ivWoodCraft"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</FrameLayout>

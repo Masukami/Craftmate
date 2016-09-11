@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Recipes">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_basic"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Basic" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Tools" />
+        <item
+            android:id="@+id/nav_blocks"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Blocks" />
+        <item
+            android:id="@+id/nav_mechanism"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Mechanism" />
+        <item
+            android:id="@+id/nav_defence"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Defence" />
+        <item
+            android:id="@+id/nav_brewing"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Brewing" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Food" />
+        <item
+            android:id="@+id/nav_other"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Other" />
+        <item
+            android:id="@+id/nav_dyes"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Dyes" />
+        <item
+            android:id="@+id/nav_wool"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Wool" />
+    </group>
+    </item>
+
+    <item android:title="Support Us">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rateapp"
+                android:icon="@drawable/ic_menu_rate"
+                android:title="Rate This App" />
+        </menu>
+    </item>
+
+</menu>

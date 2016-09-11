@@ -1,0 +1,413 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.masukami.minecraftcraftmate.BlocksFragment">
+
+
+    <TableLayout
+        android:paddingBottom="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Blocks Recipes"
+                android:id="@+id/tvBlockTitle" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_height="5dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ibGlowstone"
+                android:background="@drawable/img_glowstone"/>
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSnow"
+                android:background="@drawable/img_snowblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibStone"
+                android:background="@drawable/img_stonebrick"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibBrick"
+                android:background="@drawable/img_brick"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSandstone"
+                android:background="@drawable/img_sandstone"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSmoothSandstone"
+                android:background="@drawable/img_smoothsandstone"
+                android:layout_weight="1" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibDecoSandstone"
+                android:background="@drawable/img_decorativesandstone"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibGold"
+                android:background="@drawable/img_goldblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibDiamond"
+                android:background="@drawable/img_diamondblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibIron"
+                android:background="@drawable/img_ironblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibLapisLazuli"
+                android:background="@drawable/img_lapislazuliblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibEmerald"
+                android:background="@drawable/img_emeraldblock"
+                android:layout_weight="1" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibCoal"
+                android:background="@drawable/img_coalblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibWool"
+                android:background="@drawable/img_woolblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibBookshelf"
+                android:background="@drawable/img_bookshelf"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibNote"
+                android:background="@drawable/img_noteblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibClay"
+                android:background="@drawable/img_clayblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibJackoLantern"
+                android:background="@drawable/img_jack_o_lantern"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibTNT"
+                android:background="@drawable/img_tnt"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibWoodStairs"
+                android:background="@drawable/img_woodenstairs"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibStoneStairs"
+                android:background="@drawable/img_stonestairs"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibWalls"
+                android:background="@drawable/img_cobblestonewalls"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibRedstone"
+                android:background="@drawable/img_blockofredstone"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibNether"
+                android:background="@drawable/img_netherbrick"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibQuartz"
+                android:background="@drawable/img_blockofquartz"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibChiseledQuarts"
+                android:background="@drawable/img_chiseledquartzblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibPillarQuartz"
+                android:background="@drawable/img_pillarquartzblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibHayBale"
+                android:background="@drawable/img_haybale"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibStainedClay"
+                android:background="@drawable/img_stainedclay"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibStainedGlass"
+                android:background="@drawable/img_stainedglass"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibGranite"
+                android:background="@drawable/img_granite"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibAndesite"
+                android:background="@drawable/img_andesite"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibDiorite"
+                android:background="@drawable/img_diorite"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibPolishedGranite"
+                android:background="@drawable/img_polishedgranite"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibPolishedAndesite"
+                android:background="@drawable/img_polishedandesite"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibPolishedDiorite"
+                android:background="@drawable/img_polisheddiorite"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibPrismarine"
+                android:background="@drawable/img_prismarine"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibDarkPrismarine"
+                android:background="@drawable/img_darkprismarine"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSeaLantern"
+                android:background="@drawable/img_sealantern"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibCoarseDirt"
+                android:background="@drawable/img_coarsedirt"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSlime"
+                android:background="@drawable/img_slimeblock"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibMoss"
+                android:background="@drawable/img_mossstone"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibMossyBrick"
+                android:background="@drawable/img_mossystonebrick"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibChiseledStone"
+                android:background="@drawable/img_chiseledstonebrick"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibRedSandstone"
+                android:background="@drawable/img_redsandstone"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibSmoothRedSandstone"
+                android:background="@drawable/img_smoothredsandstone"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:id="@+id/ibChiseledRedSandstone"
+                android:background="@drawable/img_chiseledredsandstone"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>
