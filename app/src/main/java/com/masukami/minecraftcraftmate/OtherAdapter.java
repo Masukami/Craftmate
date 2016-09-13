@@ -9,22 +9,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * Created by suhai on 9/11/2016.
+ * Created by suhai on 9/12/2016.
  */
-public class MechanismAdapter extends BaseAdapter{
+public class OtherAdapter extends BaseAdapter {
 
-       private final Context mContext;
-    private final String[] mechanisms;
+    private final Context mContext;
+    private final String[] others;
     private final int[] imageID;
-    public MechanismAdapter(Context context, String[] mechanisms, int[] imageID){
+    public OtherAdapter(Context context, String[] others, int[] imageID){
         this.mContext = context;
         this.imageID = imageID;
-        this.mechanisms = mechanisms;
+        this.others = others;
     }
 
     @Override
     public int getCount() {
-        return mechanisms.length;
+        return others.length;
     }
 
     @Override
@@ -44,14 +44,15 @@ public class MechanismAdapter extends BaseAdapter{
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) mContext
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);;
-            grid = inflater.inflate(R.layout.mechanism_single, parent, false);
+            grid = inflater.inflate(R.layout.other_single, parent, false);
         } else {
             grid = (View) convertView;
         }
         TextView textView = (TextView) grid.findViewById(R.id.grid_text);
         ImageView imageView = (ImageView)grid.findViewById(R.id.grid_image);
-        textView.setText(mechanisms[position]);
+        textView.setText(others[position]);
         imageView.setImageResource(imageID[position]);
         return grid;
     }
+
 }

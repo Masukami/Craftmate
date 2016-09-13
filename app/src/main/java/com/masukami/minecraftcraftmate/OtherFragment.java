@@ -1,12 +1,17 @@
 package com.masukami.minecraftcraftmate;
 
 import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.PopupWindow;
 
 
 /**
@@ -60,11 +65,228 @@ public class OtherFragment extends Fragment {
         }
     }
 
+    GridView grid;
+    String[]others = {
+            "Paper",
+            "Book",
+            "Book and Quill",
+            "Iron Bars",
+            "Nether\nBrick Fence",
+            "Gold Ingot",
+            "Eye of Ender",
+            "Enchantment Table",
+            "Fire Charge",
+            "Ender Chest",
+            "Beacon",
+            "Anvil",
+            "Flower Pot",
+            "Item Frame",
+            "Carrot\non a\nStick",
+            "Firework Rocket",
+            "Firework\nStar",
+            "Lead",
+            "Carpets",
+            "Glass Panes",
+            "Leather",
+            "Banner",
+            "Armor Stand"
+    };
+
+    int[] imageID = {
+            R.drawable.img_paper,
+            R.drawable.img_book,
+            R.drawable.img_bookandquill,
+            R.drawable.img_ironbars,
+            R.drawable.img_netherbrickfence,
+            R.drawable.img_goldingot,
+            R.drawable.img_eyeofender,
+            R.drawable.img_enchantmenttable,
+            R.drawable.img_firecharge,
+            R.drawable.img_enderchest,
+            R.drawable.img_beacon,
+            R.drawable.img_anvil,
+            R.drawable.img_flowerpot,
+            R.drawable.img_itemframe,
+            R.drawable.img_carrotonastick,
+            R.drawable.img_fireworkrocket,
+            R.drawable.img_fireworkstar,
+            R.drawable.img_lead,
+            R.drawable.img_carpets,
+            R.drawable.img_glasspanes,
+            R.drawable.img_leather,
+            R.drawable.img_banner,
+            R.drawable.img_armorstand
+    };
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_other, container, false);
+        View view = null;
+        view = inflater.inflate(R.layout.fragment_other, container, false);
+        OtherAdapter otherAdapter = new OtherAdapter(this.getActivity(), others, imageID);
+        grid = (GridView) view.findViewById(R.id.gridview);
+            grid.setAdapter(otherAdapter);
+            grid.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        showPopup("paper");
+                        break;
+                    case 1:
+                        showPopup("book");
+                        break;
+                    case 2:
+                        showPopup("bookandquill");
+                        break;
+                    case 3:
+                        showPopup("ironbars");
+                        break;
+                    case 4:
+                        showPopup("netherbrickfence");
+                        break;
+                    case 5:
+                        showPopup("goldingot");
+                        break;
+                    case 6:
+                        showPopup("endereye");
+                        break;
+                    case 7:
+                        showPopup("enchantmenttable");
+                        break;
+                    case 8:
+                        showPopup("firecharge");
+                        break;
+                    case 9:
+                        showPopup("enderchest");
+                        break;
+                    case 10:
+                        showPopup("beacon");
+                        break;
+                    case 11:
+                        showPopup("anvil");
+                        break;
+                    case 12:
+                        showPopup("flowerpot");
+                        break;
+                    case 13:
+                        showPopup("itemframe");
+                        break;
+                    case 14:
+                        showPopup("carrotonastick");
+                        break;
+                    case 15:
+                        showPopup("fireworkrocket");
+                        break;
+                    case 16:
+                        showPopup("fireworkstar");
+                        break;
+                    case 17:
+                        showPopup("lead");
+                        break;
+                    case 18:
+                        showPopup("carpet");
+                        break;
+                    case 19:
+                        showPopup("glasspanes");
+                        break;
+                    case 20:
+                        showPopup("leather");
+                        break;
+                    case 21:
+                        showPopup("banner");
+                        break;
+                    case 22:
+                        showPopup("armorstand");
+                        break;
+                }
+            }
+        });
+        return view;
+    }
+
+    private void showPopup(String item){
+
+        View popupView = null;
+        switch(item){
+            case "paper":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.paper_popup, null);
+                break;
+            case "book":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.book_popup, null);
+                break;
+            case "bookandquill":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.bookandquill_popup, null);
+                break;
+            case "ironbars":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.ironbars_popup, null);
+                break;
+            case "netherbrickfence":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.netherbrickfence_popup, null);
+                break;
+            case "goldingot":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.goldingot_popup, null);
+                break;
+            case "endereye":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.eyeofender_popup, null);
+                break;
+            case "enchantmenttable":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.enchantmenttable_popup, null);
+                break;
+            case "firecharge":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.firecharge_popup, null);
+                break;
+            case "enderchest":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.enderchest_popup, null);
+                break;
+            case "beacon":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.beacon_popup, null);
+                break;
+            case "anvil":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.anvil_popup, null);
+                break;
+            case "flowerpot":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.flowerpot_popup, null);
+                break;
+            case "itemframe":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.itemframe_popup, null);
+                break;
+            case "carrotonastick":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.carrotonastick_popup, null);
+                break;
+            case "fireworkrocket":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.fireworkrocket_popup, null);
+                break;
+            case "fireworkstar":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.fireworkstar_popup, null);
+                break;
+            case "lead":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.lead_popup, null);
+                break;
+            case "carpet":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.carpets_popup, null);
+                break;
+            case "glasspanes":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.glasspanes_popup, null);
+                break;
+            case "leather":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.leather_popup, null);
+                break;
+            case "banner":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.banner_popup, null);
+                break;
+            case "armorstand":
+                popupView = getActivity().getLayoutInflater().inflate(R.layout.armorstand_popup, null);
+                break;
+        }
+
+        PopupWindow popupWindow = new PopupWindow(popupView, 600, 500, true);
+        popupWindow.setFocusable(true);
+        popupWindow.setBackgroundDrawable(new ColorDrawable());
+
+        popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
